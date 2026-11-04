@@ -385,7 +385,8 @@
     notify(files.length + ' fichier(s) ajouté(s)' + (selected.length > files.length ? ' (certains fichiers ignorés)' : ''));
     event.target.value = '';
   });
-  window.addEventListener('pagehide', () => localObjectUrls.forEach(url => URL.revokeObjectURL(url)));
+  // A page in the back/forward cache keeps its playlist and must keep its blob URLs.
+  window.addEventListener('pagehide', event => { if (!event.persisted) localObjectUrls.forEach(url => URL.revokeObjectURL(url)); });
   loadTrack(0);
 
   // Verified 2026 release: Stormy — DESPERADO. This is metadata only.
@@ -441,3 +442,4 @@
     art.addEventListener('pointerleave', () => art.style.transform = '');
   }
 })();
+
