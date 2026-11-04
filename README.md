@@ -1,4 +1,13 @@
-# TOV4R MUSIC — Website V5
+# TOV4R MUSIC — Website V5.1
+
+## Révision GitHub (4 novembre 2026)
+
+- Correction du lien **GitHub** dans `assets/config.js` (le bouton ouvre maintenant ce dépôt).
+- Ajout des métadonnées de partage et d'un statut de lecture accessible (`aria-live`).
+- Amélioration de la navigation au clavier : le raccourci `/` ne gêne plus la saisie dans les champs éditables.
+- Correction du nettoyage du champ temporaire utilisé pour copier une commande, même si la copie échoue.
+- Chargement du fond vidéo optimisé, sans modifier le contenu de la playlist ni les liens Discord.
+- Les fonctions et commandes disponibles dans Discord restent dépendantes de la version réelle du bot. Le site vitrine ne constitue pas un tableau de bord temps réel.
 
 Site vitrine responsive **HTML / CSS / JavaScript**, prêt pour GitHub Pages, pour le bot Discord **TOV4R MUSIC**.
 

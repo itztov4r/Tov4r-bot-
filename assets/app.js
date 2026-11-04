@@ -29,7 +29,7 @@
   $$('.main-nav a').forEach(link => link.addEventListener('click', closeMenu));
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape') closeMenu();
-    if (event.key === '/' && !/input|textarea/i.test(document.activeElement.tagName) && !event.ctrlKey && !event.metaKey && !event.altKey) {
+    if (event.key === '/' && !/input|textarea/i.test(document.activeElement.tagName) && !document.activeElement.isContentEditable && !event.ctrlKey && !event.metaKey && !event.altKey) {
       event.preventDefault();
       $('#commandSearch').focus();
       $('#commands').scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth' });
@@ -76,8 +76,9 @@
         textarea.style.top = '-1000px';
         document.body.appendChild(textarea);
         textarea.focus(); textarea.select();
-        if (!document.execCommand('copy')) throw new Error('Copy not supported');
+        const copied = document.execCommand('copy');
         textarea.remove();
+        if (!copied) throw new Error('Copy not supported');
       }
       notify('Copié : ' + value);
     } catch {

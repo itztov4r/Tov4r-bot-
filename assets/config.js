@@ -15,5 +15,5 @@ window.TOV4R_CONFIG = {
   supportUrl: "",
 
   // Facultatif : URL de ton dépôt GitHub (public).
-  githubUrl: ""
+  githubUrl: "https://github.com/itztov4r/Tov4r-bot-"
 };
