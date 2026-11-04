@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#09080d" name="theme-color"/>
+<meta content="TOV4R MUSIC — le bot musical Discord à l'énergie rouge &amp; noir. Commandes slash, file d'attente, contrôles DJ et ambiance pour ton serveur." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="TOV4R MUSIC — Turn up your server" property="og:title"/>
+<meta content="Donne le rythme à ton serveur Discord. Découvre TOV4R MUSIC." property="og:description"/>
+<meta content="assets/og-preview.svg" property="og:image"/>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/style.css" rel="stylesheet"/>
+<title>TOV4R MUSIC — Turn up your server</title>
+<script defer="" src="assets/config.js"></script>
+<script defer="" src="assets/app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<svg aria-hidden="true" class="icon-library" xmlns="http://www.w3.org/2000/svg">
+<symbol id="i-arrow" viewbox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"></path></symbol>
+<symbol id="i-arrow-up" viewbox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"></path></symbol>
+<symbol id="i-play" viewbox="0 0 24 24"><path d="m9 5 11 7-11 7V5Z" stroke-linejoin="round"></path></symbol>
+<symbol id="i-pause" viewbox="0 0 24 24"><path d="M8 5v14M16 5v14"></path></symbol>
+<symbol id="i-next" viewbox="0 0 24 24"><path d="m5 5 10 7-10 7V5Zm13 0v14" stroke-linejoin="round"></path></symbol>
+<symbol id="i-prev" viewbox="0 0 24 24"><path d="M19 5 9 12l10 7V5ZM6 5v14" stroke-linejoin="round"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 5 5L20 7"></path></symbol>
+<symbol id="i-copy" viewbox="0 0 24 24"><rect height="12" rx="2" width="12" x="8" y="8"></rect><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path></symbol>
+<symbol id="i-search" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></symbol>
+<symbol id="i-headphones" viewbox="0 0 24 24"><path d="M3 14v-3a9 9 0 0 1 18 0v3M3 14v4a3 3 0 0 0 3 3h2v-9H6a3 3 0 0 0-3 3Zm18 0v4a3 3 0 0 1-3 3h-2v-9h2a3 3 0 0 1 3 3Z"></path></symbol>
+<symbol id="i-music" viewbox="0 0 24 24"><path d="M9 18V5l12-2v13M9 18c0 1.7-1.8 3-4 3s-4-1.3-4-3 1.8-3 4-3 4 1.3 4 3Zm12-2c0 1.7-1.8 3-4 3s-4-1.3-4-3 1.8-3 4-3 4 1.3 4 3Z"></path></symbol>
+<symbol id="i-list" viewbox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></symbol>
+<symbol id="i-sliders" viewbox="0 0 24 24"><path d="M4 7h10m4 0h2M4 17h2m4 0h10"></path><circle cx="16" cy="7" r="2"></circle><circle cx="8" cy="17" r="2"></circle></symbol>
+<symbol id="i-zap" viewbox="0 0 24 24"><path d="m13 2-10 12h8l-1 8 11-12h-8V2Z" stroke-linejoin="round"></path></symbol>
+<symbol id="i-shuffle" viewbox="0 0 24 24"><path d="m17 3 4 4-4 4M3 17h3c5 0 7-10 12-10h3M17 13l4 4-4 4M3 7h3c2 0 3 1 4 3m4 4c1 2 2 3 4 3h3"></path></symbol>
+<symbol id="i-globe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2c5 5 5 15 0 20M12 2c-5 5-5 15 0 20"></path></symbol>
+<symbol id="i-shield" viewbox="0 0 24 24"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"></path><path d="m9 12 2 2 4-4"></path></symbol>
+<symbol id="i-discord" viewbox="0 0 24 24"><path d="M19.7 5.3A18 18 0 0 0 15.5 4l-.5 1c-2-.3-4-.3-6 0l-.5-1a18 18 0 0 0-4.2 1.3C1.8 9 1 12.8 1.3 16.5A18.8 18.8 0 0 0 6.7 19l1.1-1.8-1.7-.9.4-.3c3.5 1.6 7.5 1.6 11 0l.4.3-1.7.9 1.1 1.8a18.8 18.8 0 0 0 5.4-2.5C23 12.8 22.2 9 19.7 5.3ZM8.6 14.6c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm6.8 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z" fill="currentColor" stroke="none"></path></symbol>
+<symbol id="i-github" viewbox="0 0 24 24"><path d="M9 19c-4 1-4-2-6-2m12 5v-3.2a2.7 2.7 0 0 0-.7-2.2c3.4-.4 7-1.6 7-7.5A5.8 5.8 0 0 0 19.8 5a5.3 5.3 0 0 0-.1-4S18.5.6 16 2.6a14 14 0 0 0-8 0C5.5.6 4.3 1 4.3 1a5.3 5.3 0 0 0-.1 4A5.8 5.8 0 0 0 2.7 9c0 5.9 3.6 7.1 7 7.5a2.7 2.7 0 0 0-.7 2.2V22"></path></symbol>
+<symbol id="i-volume-off" viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4V5ZM17 9l5 6m0-6-5 6" /></symbol>
+<symbol id="i-volume" viewbox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4V5ZM15 9a5 5 0 0 1 0 6m3-9a9 9 0 0 1 0 12"></path></symbol>
+<symbol id="i-chevron" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></symbol>
+<symbol id="i-external" viewbox="0 0 24 24"><path d="M13 5h6v6m0-6-9 9M19 14v5H5V5h5"></path></symbol>
+<symbol id="i-menu" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></symbol>
+<symbol id="i-close" viewbox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"></path></symbol>
+<symbol id="i-command" viewbox="0 0 24 24"><path d="M9 7V5a3 3 0 1 0-3 3h13a3 3 0 1 0-3-3v14a3 3 0 1 0 3-3H5a3 3 0 1 0 3 3V5"></path></symbol>
+</svg>
+<div aria-hidden="true" class="intro" id="intro"><div class="intro-content"><div class="intro-overline">INITIALIZING TOV4R MUSIC</div><span class="intro-badge">TM<span class="intro-star">✦</span></span><span class="intro-name">TOV4R <strong>MUSIC</strong></span><span class="intro-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><small>ENTER THE FREQUENCY</small><div class="intro-loader"><span></span></div><span class="intro-counter">/// LET THE MUSIC BEGIN</span></div><span class="intro-scanline"></span><span class="intro-orb intro-orb-one"></span><span class="intro-orb intro-orb-two"></span><span class="intro-light-beam"></span></div>
+<div aria-hidden="true" class="ambient ambient-one"></div><div aria-hidden="true" class="ambient ambient-two"></div>
+<div aria-hidden="true" class="cursor-glow" id="cursorGlow"></div>
+<header class="site-header" id="header">
+<div class="container nav-container">
+<a aria-label="TOV4R MUSIC — accueil" class="brand" href="#top"><img alt="" height="44" src="assets/logo.svg" width="44"/><span>TOV4R<span class="brand-accent">MUSIC</span><small>DISCORD MUSIC BOT</small></span></a>
+<nav aria-label="Navigation principale" class="main-nav" id="mainNav">
+<a class="nav-link is-current" href="#top">Accueil</a><a class="nav-link" href="#features">Fonctionnalités</a><a class="nav-link" href="#commands">Commandes</a><a class="nav-link" href="#how">Installation</a><a class="nav-link" href="support.html">Support / FAQ</a>
+<button class="btn btn-primary nav-cta" data-action="invite" type="button"><svg class="ico"><use href="#i-discord"></use></svg> Ajouter le bot <svg class="ico ico-sm"><use href="#i-arrow-up"></use></svg></button>
+</nav>
+<button aria-controls="mainNav" aria-expanded="false" aria-label="Ouvrir le menu" class="menu-toggle" id="menuToggle" type="button"><svg class="ico menu-icon"><use href="#i-menu"></use></svg><svg class="ico close-icon"><use href="#i-close"></use></svg></button>
+</div>
+</header>
+<main id="main">
+<section class="hero" id="top"><video aria-hidden="true" autoplay="" class="hero-background-video" loop="" muted="" playsinline="" poster="assets/album-cover.webp" preload="none"><source src="assets/hero-ambient.mp4" type="video/mp4"/></video>
+<div aria-hidden="true" class="hero-grid"></div><div aria-hidden="true" class="hero-shine"></div>
+<div class="container hero-layout">
+<div class="hero-copy">
+<div class="eyebrow reveal"><span class="signal-dot"></span> THE SOUND OF YOUR SERVER <span class="eyebrow-line"></span> EST. 2026</div>
+<h1 class="hero-title reveal" style="--delay: .1s">TURN UP<br/><span class="outline">YOUR</span> <span class="text-glow">SERVER<span class="title-period">.</span></span></h1>
+<p class="hero-description reveal" style="--delay: .18s">Un serveur silencieux ? <strong>Not anymore.</strong> TOV4R MUSIC ramène l'ambiance sur Discord avec des commandes simples, une file d'attente et un contrôle DJ à portée de main.</p>
+<div class="hero-actions reveal" style="--delay: .28s"><button class="btn btn-primary btn-large" data-action="invite" type="button"><svg class="ico"><use href="#i-discord"></use></svg> Ajouter sur Discord <svg class="ico"><use href="#i-arrow-up"></use></svg></button><a class="btn btn-outline btn-large" href="#desperado"><svg class="ico"><use href="#i-play"></use></svg> Playlist Stormy · DESPERADO</a></div>
+<div class="hero-proof reveal" style="--delay: .35s"><div class="proof-icons"><span><svg class="ico"><use href="#i-music"></use></svg></span><span><svg class="ico"><use href="#i-command"></use></svg></span><span><svg class="ico"><use href="#i-globe"></use></svg></span></div><p><strong>Le rythme. Les commandes. La communauté.</strong><br/>Ton son, ton ambiance, ton serveur.</p></div>
+</div>
+<div class="hero-art reveal" id="heroArt" style="--delay: .16s">
+<span class="orbit-label orbit-label-top">FREQUENCY / 001</span><span class="orbit-label orbit-label-side">SOUND SYSTEM • TOV4R</span>
+<div class="hero-art-halo"></div><div class="record-decor record-decor-one"></div><div class="record-decor record-decor-two"></div>
+<div class="record" id="heroRecord"><div class="record-grooves"></div><div class="record-inner"><div class="record-center"><img alt="" src="assets/logo.svg"/></div></div><span class="record-gleam"></span></div>
+<div class="floating-pill floating-pill-top"><span class="pill-icon"><svg class="ico"><use href="#i-zap"></use></svg></span><span><b>SLASH COMMANDS</b><small>Simple. Rapide. Efficace.</small></span></div>
+<div class="floating-pill floating-pill-bottom"><span class="eq-mini"><i></i><i></i><i></i><i></i><i></i></span><span><b>YOUR VIBE</b><small>Control the moment</small></span></div>
+<div class="hero-art-caption"><span>01 / 03</span><span>MADE TO BE LOUD <svg class="ico ico-sm"><use href="#i-arrow-up"></use></svg></span></div>
+</div>
+</div>
+<div class="hero-bottom container"><span>SCROLL TO EXPLORE <span class="scroll-arrow">↓</span></span><span>THE MUSIC NEVER STOPS* <small>*QUAND LE BOT EST EN LIGNE</small></span></div>
+</section>
+<div aria-label="Music • community • TOV4R" class="marquee"><div aria-hidden="true" class="marquee-track"><span>TOV4R MUSIC <b>✳</b> MORE MUSIC <b>✳</b> MORE VIBES <b>✳</b> YOUR SERVER <b>✳</b> TOV4R MUSIC <b>✳</b> MORE MUSIC <b>✳</b> MORE VIBES <b>✳</b> YOUR SERVER <b>✳</b> </span><span>TOV4R MUSIC <b>✳</b> MORE MUSIC <b>✳</b> MORE VIBES <b>✳</b> YOUR SERVER <b>✳</b> TOV4R MUSIC <b>✳</b> MORE MUSIC <b>✳</b> MORE VIBES <b>✳</b> YOUR SERVER <b>✳</b> </span></div></div>
+<section aria-labelledby="vibeTitle" class="section vibe-section" id="vibes">
+<div class="container">
+<div class="vibe-heading reveal"><div><p class="section-kicker"><span class="num">01</span> // THE MUSIC UNIVERSE</p><h2 class="section-title" id="vibeTitle">BUILT FOR <span class="accent">THE VIBE.</span></h2></div><p>La musique, c'est plus qu'une commande. Découvre l'univers sonore de TOV4R MUSIC.</p></div>
+<div class="vibe-gallery">
+<figure class="vibe-tile vibe-tile-one reveal"><img alt="Illustration d'un concert aux lumières rouges, avec une foule devant la scène" decoding="async" height="900" loading="lazy" src="assets/vibe-live.webp" width="1240"/><figcaption><span>001 / LIVE ENERGY</span><strong>MAKE SOME <em>NOISE.</em></strong><small>Fais vibrer ton serveur.</small></figcaption></figure>
+<figure class="vibe-tile vibe-tile-two reveal" style="--delay:.08s"><img alt="Illustration d'un disque vinyle noir et rouge sur une platine" decoding="async" height="900" loading="lazy" src="assets/vibe-vinyl.webp" width="1240"/><figcaption><span>002 / DEEP SOUND</span><strong>FEEL EVERY <em>BEAT.</em></strong></figcaption></figure>
+<figure class="vibe-tile vibe-tile-three reveal" style="--delay:.16s"><img alt="Illustration d'une table de mixage DJ illuminée en rouge" decoding="async" height="900" loading="lazy" src="assets/vibe-mixer.webp" width="1240"/><figcaption><span>003 / YOUR CONTROL</span><strong>YOU SET <em>THE VIBE.</em></strong></figcaption></figure>
+</div>
+</div>
+</section>
+<section class="section features-section" id="features">
+<div class="container"><div class="section-header"><div><p class="section-kicker reveal"><span class="num">01</span> // THE EXPERIENCE</p><h2 class="section-title reveal">UN BOT. <span class="muted">TOUTES</span><br/>LES <span class="accent">VIBES.</span></h2></div><p class="section-aside reveal">Pensé pour les sessions gaming, les soirées entre potes et les serveurs qui ont besoin d'un peu plus d'énergie.</p></div>
+<div class="features-grid">
+<article class="feature-card feature-featured reveal"><div class="feature-top"><span class="feature-index">01 / MUSIC</span><svg class="ico feature-arrow"><use href="#i-arrow-up"></use></svg></div><div class="feature-graphic"><div class="feature-vinyl"><div class="feature-vinyl-center"></div></div><div class="feature-sound-lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="feature-info"><span class="feature-icon"><svg class="ico"><use href="#i-music"></use></svg></span><h3>Music on demand.</h3><p>Lance une recherche musicale directement depuis ton serveur avec <code>/sma3</code>.</p></div></article>
+<article class="feature-card reveal" style="--delay:.08s"><div class="feature-top"><span class="feature-index">02 / CONTROL</span><svg class="ico feature-arrow"><use href="#i-arrow-up"></use></svg></div><div class="feature-simple-art"><div class="big-icon"><svg class="ico"><use href="#i-sliders"></use></svg></div><span class="simple-lines">/// /// ///</span></div><div class="feature-info"><h3>Full DJ control.</h3><p>Pause, reprise, suivant, volume... Garde le contrôle sans quitter Discord.</p></div></article>
+<article class="feature-card reveal" style="--delay:.14s"><div class="feature-top"><span class="feature-index">03 / QUEUE</span><svg class="ico feature-arrow"><use href="#i-arrow-up"></use></svg></div><div class="feature-simple-art"><div class="stack-art"><span><i></i><i></i></span><span><i></i><i></i></span><span><i></i><i></i></span></div></div><div class="feature-info"><h3>Keep it in queue.</h3><p>Une file d'attente claire pour gérer les prochains morceaux et organiser les sessions.</p></div></article>
+<article class="feature-card reveal" style="--delay:.08s"><div class="feature-top"><span class="feature-index">04 / COMMANDS</span><svg class="ico feature-arrow"><use href="#i-arrow-up"></use></svg></div><div class="feature-simple-art"><div class="command-art"><span class="command-art-prompt">/</span><span class="command-art-text">sma3</span><span class="command-art-caret"></span></div></div><div class="feature-info"><h3>Simple comme /play.</h3><p>Des commandes slash faciles à retrouver, même pour les nouveaux membres.</p></div></article>
+<article class="feature-card reveal" style="--delay:.14s"><div class="feature-top"><span class="feature-index">05 / COMMUNITY</span><svg class="ico feature-arrow"><use href="#i-arrow-up"></use></svg></div><div class="feature-simple-art"><div class="big-icon community-icon"><svg class="ico"><use href="#i-globe"></use></svg></div><div class="feature-orbit"></div></div><div class="feature-info"><h3>Made for servers.</h3><p>Invitable sur plusieurs serveurs grâce à l'installation Discord.</p></div></article>
+</div>
+</div>
+</section>
+<section class="section demo-section" id="demo"><div aria-hidden="true" class="demo-noise"></div><div class="container demo-layout">
+<div class="demo-intro"><p class="section-kicker reveal"><span class="num">02</span> // INTERACTIVE PREVIEW</p><h2 class="section-title reveal">FEEL THE<br/><span class="accent">FREQUENCY.</span></h2><p class="reveal">Un véritable lecteur audio avec 4 créations instrumentales originales. Importe aussi tes fichiers MP3 pour créer ta playlist personnelle. Pour Stormy, utilise le lecteur officiel ci-dessous.</p><div class="demo-disclaimer reveal"><span class="signal-dot"></span><span>LECTEUR RÉEL : 4 pistes instrumentales originales incluses, plus tes propres fichiers audio. Indépendant du bot Discord.</span></div><div class="demo-quote reveal"><span>“</span> YOUR MUSIC.<br/>YOUR VIBE.<br/><strong>YOUR SERVER.</strong></div></div>
+<div class="player-shell reveal">
+<div class="player-head">
+<div class="player-head-left"><img alt="" height="34" src="assets/logo.svg" width="34"/>
+<div><strong>TOV4R PLAYER</strong><small>REAL AUDIO <span class="demo-dot"></span> LOCAL PLAYER</small></div>
+</div>
+<div class="player-top-chips"><span class="player-chip"><svg class="ico"><use href="#i-zap"></use></svg> Visualizer</span><span class="player-chip"><svg class="ico"><use href="#i-list"></use></svg> Playlist</span></div>
+</div>
+<div class="player-body player-body-rich"><audio id="nativeAudio" preload="metadata"></audio>
+<div class="player-main">
+<div class="album-art" id="albumArt"><img alt="Pochette du morceau en cours" class="album-art-photo" decoding="async" id="albumPhoto" loading="lazy" src="assets/track-midnight.webp"/><div class="album-outer"><div class="album-disk"><span class="album-label">TM</span></div></div><div class="album-glare"></div><span class="album-corner" id="trackBadge">VOL. 01 — DEMO</span><span class="album-sign">TOV4R / AUDIO</span></div>
+<div class="track-line"><div class="track-info"><span>NOW PLAYING / ORIGINAL TRACK</span><h3 id="trackTitle">MIDNIGHT SIGNAL</h3><p id="trackArtist">TOV4R DEMO — ORIGINAL PLACEHOLDER</p></div><button aria-label="Ajouter aux favoris de la démo" aria-pressed="false" class="track-favorite" id="favoriteBtn" type="button">♡</button></div>
+<div class="player-stats"><div class="player-stat"><span>STATUS</span><strong id="playerStatus">PAUSED</strong></div><div class="player-stat"><span>QUEUE</span><strong id="queueCount">4 TRACKS</strong></div><div class="player-stat"><span>MOOD</span><strong id="playerMood">NIGHT DRIVE</strong></div></div>
+<div class="progress-box"><div aria-label="Position du morceau de démonstration" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-rail" id="progressRail" role="slider" tabindex="0"><div class="progress-fill" id="progressFill"></div></div><div class="progress-times"><span id="elapsed">0:00</span><span id="duration">3:24</span></div></div>
+<div class="player-controls"><button aria-label="Activer la lecture aléatoire (démo)" aria-pressed="false" class="control-secondary" id="shuffleBtn" type="button"><svg class="ico"><use href="#i-shuffle"></use></svg></button><button aria-label="Morceau précédent (démo)" class="control-normal" id="prevBtn" type="button"><svg class="ico"><use href="#i-prev"></use></svg></button><button aria-label="Lire la démo" aria-pressed="false" class="control-play" id="playBtn" type="button"><svg class="ico" id="playIcon"><use href="#i-play"></use></svg></button><button aria-label="Morceau suivant (démo)" class="control-normal" id="nextBtn" type="button"><svg class="ico"><use href="#i-next"></use></svg></button><button aria-label="Activer la répétition (démo)" aria-pressed="false" class="control-secondary" id="repeatBtn" type="button">↻</button></div>
+<div class="player-volume"><button type="button" id="muteBtn" class="mute-btn" aria-label="Couper le son" aria-pressed="false"><svg class="ico"><use href="#i-volume"></use></svg></button><label for="volumeInput">VOLUME <span id="volumeValue">70%</span></label><input aria-label="Volume du lecteur audio" id="volumeInput" max="100" min="0" type="range" value="70"/></div>
+<div class="import-tracks"><label class="btn btn-outline import-button" for="localAudioFiles"><svg class="ico"><use href="#i-plus"></use></svg> Importer mes fichiers audio</label><input accept="audio/*,.mp3,.m4a,.ogg,.wav,.webm" hidden="" id="localAudioFiles" multiple="" type="file"/><small>Les fichiers restent sur ton appareil. Aucun upload sur un serveur.</small></div></div>
+<aside class="playlist-panel">
+<div class="playlist-panel-head"><div><span class="playlist-kicker">ORIGINAL AUDIO DEMOS</span><h3>Playlist locale</h3></div><strong id="playlistTotal">12:34</strong></div>
+<div class="playlist-list" id="playlistList"></div>
+<div class="playlist-bottom"><div class="playlist-mini-art"><img alt="" decoding="async" loading="lazy" src="assets/track-redroom.webp"/></div><div><span>ADD MORE VIBES</span><strong>Le bot est prêt pour ton serveur</strong></div></div>
+</aside>
+</div>
+<div class="player-foot"><div aria-hidden="true" class="player-eq" id="playerEq"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span>ORIGINAL TRACKS • PLAYABLE AUDIO</span></div>
+</div>
+</div></section>
+<section aria-labelledby="stormyTitle" class="stormy-album-section section" id="desperado">
+<div class="container">
+<div class="stormy-heading reveal"><p class="section-kicker"><span class="num">03</span> // OFFICIAL ALBUM PLAYLIST</p><span class="stormy-era">2026 / MOROCCAN RAP</span></div>
+<div class="stormy-layout">
+<div class="stormy-story reveal">
+<div class="stormy-cover-wrap"><img alt="Illustration originale TOV4R pour la playlist DESPERADO de Stormy" class="stormy-cover" decoding="async" loading="lazy" src="assets/desperado-art.webp"/><div class="stormy-cover-ornament">FULL ALBUM // 15 TRACKS</div></div>
+<div class="stormy-bio"><span class="stormy-label">FEATURED ALBUM / 001</span><h2 id="stormyTitle">STORMY<span> / </span><em>DESPERADO</em></h2><p>La playlist complète de l'album <strong>DESPERADO</strong> de Stormy, dans son ordre officiel. Lance le lecteur Apple Music pour écouter l'album selon les conditions du service.</p><div class="stormy-metrics"><span><strong>15</strong> TRACKS</span><span><strong>43</strong> MINUTES</span><span><strong>2026</strong> RELEASE</span></div><a class="btn btn-primary btn-large" href="https://music.apple.com/us/album/desperado/6769133050" rel="noopener noreferrer" target="_blank"><svg class="ico"><use href="#i-external"></use></svg> Ouvrir l'album officiel</a></div>
+</div>
+<div class="stormy-right reveal" style="--delay:.1s">
+<div class="stormy-queue-title"><div><span>STORMY / DESPERADO</span><h3>TRACKLIST.</h3></div><span class="stormy-queue-count">15 TITRES</span></div>
+<div class="stormy-tracklist" id="stormyTracklist">
+<!-- Populated from official album track listing via assets/app.js -->
+</div>
+<div class="stormy-stream"><div class="stream-header"><div><span class="stream-dot"></span><strong>OFFICIAL STREAM</strong></div><span>Apple Music</span></div><iframe allow="autoplay *; encrypted-media *; fullscreen *" height="240" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/desperado/6769133050" title="Écouter DESPERADO de Stormy sur Apple Music"></iframe><p>La lecture dépend d'Apple Music et de ton abonnement / pays. Les fichiers de Stormy ne sont pas hébergés sur ce site.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="spotTitle" class="bot-spotlight">
+<div class="container spotlight-layout">
+<div class="spotlight-visual reveal"><div class="spotlight-aura"></div><img alt="Mascotte futuriste TOV4R portant un casque audio lumineux rouge" decoding="async" height="685" loading="lazy" src="assets/tov4r-bot-mascot.png" width="780"/><span class="spotlight-number">TOV4R / 2026</span></div>
+<div class="spotlight-copy reveal" style="--delay:.12s"><p class="section-kicker">// MEET YOUR MUSIC BOT</p><h2>YOUR SERVER.<br/><span>YOUR STAGE.</span></h2><p>Un bot musical, une seule mission : ramener le son dans ton vocal. Invite TOV4R MUSIC et retrouve tes commandes directement sur Discord.</p><button class="btn btn-primary btn-large" data-action="invite" type="button"><svg class="ico"><use href="#i-discord"></use></svg> Ajouter le bot <svg class="ico"><use href="#i-arrow-up"></use></svg></button><span class="spotlight-caption">Artwork créé pour l'univers TOV4R MUSIC.</span></div>
+</div>
+</section>
+<section class="section commands-section" id="commands"><div class="container"><div class="section-header"><div><p class="section-kicker reveal"><span class="num">03</span> // THE COMMAND CENTER</p><h2 class="section-title reveal">TU COMMANDES.<br/><span class="accent">LE SON SUIT.</span></h2></div><p class="section-aside reveal">Retrouve les commandes essentielles de TOV4R MUSIC. Un clic suffit pour les copier.</p></div>
+<div class="commands-interface reveal"><div class="commands-toolbar"><div aria-label="Filtrer les commandes" class="filter-tabs" role="group"><button aria-pressed="true" class="filter-btn is-active" data-filter="all" type="button">Toutes <span id="allCount">12</span></button><button aria-pressed="false" class="filter-btn" data-filter="music" type="button">Musique</button><button aria-pressed="false" class="filter-btn" data-filter="control" type="button">Contrôle</button><button aria-pressed="false" class="filter-btn" data-filter="utility" type="button">Utilitaires</button></div><label class="search-box"><svg class="ico"><use href="#i-search"></use></svg><input aria-label="Rechercher une commande" autocomplete="off" id="commandSearch" placeholder="Rechercher une commande..." type="search"/><kbd>/</kbd></label></div>
+<div aria-live="polite" class="commands-grid" id="commandsGrid"></div><div class="no-results" hidden="" id="noResults">Aucune commande trouvée. Essaie un autre mot.</div><div class="commands-footer"><span><span class="signal-dot"></span> Commandes disponibles selon la version installée du bot.</span><span><svg class="ico"><use href="#i-copy"></use></svg> CLIQUE POUR COPIER</span></div></div>
+</div></section>
+<section aria-labelledby="visualsTitle" class="section media-wall-section" id="visuals">
+<div class="container">
+<div class="section-header media-wall-header">
+<div>
+<p class="section-kicker reveal"><span class="num">04</span> // VISUAL EXPERIENCE</p>
+<h2 class="section-title reveal" id="visualsTitle">A WEBSITE THAT<br/><span class="accent">LOOKS ALIVE.</span></h2>
+</div>
+<p class="section-aside reveal">Des visuels, des pochettes, une ambiance rouge &amp; noire et des cards qui donnent au site un vrai feeling musical.</p>
+</div>
+<div class="media-wall-grid">
+<article class="media-card media-card-large reveal">
+<img alt="Scène de concert rouge avec foule en énergie" decoding="async" loading="lazy" src="assets/vibe-live.webp"/>
+<div class="media-card-copy"><span>LIVE ENERGY</span><strong>Bring the crowd to your server.</strong><p>Une présence visuelle forte pour montrer que TOV4R MUSIC n'est pas juste un bot, c'est une ambiance.</p></div>
+</article>
+<article class="media-card reveal" style="--delay:.07s">
+<img alt="Pochette musicale AFTER HOURS" decoding="async" loading="lazy" src="assets/track-afterhours.webp"/>
+<div class="media-card-copy"><span>TRACK ART</span><strong>Dynamic cover art</strong></div>
+</article>
+<article class="media-card reveal" style="--delay:.14s">
+<img alt="Pochette musicale NEON FREQUENCY" decoding="async" loading="lazy" src="assets/track-neon.webp"/>
+<div class="media-card-copy"><span>NEON VIBES</span><strong>More visuals, more depth</strong></div>
+</article>
+<article class="media-card media-card-wide reveal" style="--delay:.2s">
+<img alt="Mascotte TOV4R MUSIC futuriste" decoding="async" loading="lazy" src="assets/tov4r-bot-mascot.png"/>
+<div class="media-card-copy"><span>BOT SPOTLIGHT</span><strong>TOV4R stands out instantly.</strong><p>Le personnage, les visuels et la grille donnent un rendu plus rempli et plus premium.</p></div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="shotsTitle" class="section screenshot-section" id="screenshots">
+<div class="container"><div class="section-header"><div><p class="section-kicker reveal"><span class="num">05</span> // BOT COMMANDS IN ACTION</p><h2 class="section-title reveal" id="shotsTitle">COMMANDES.<br/><span class="accent">EN IMAGES.</span></h2></div><p class="section-aside reveal">Aperçus illustratifs de l'expérience dans Discord : jouer, contrôler et consulter la file d'attente. Visuels conceptuels, non captures d'un serveur réel.</p></div>
+<div class="shot-grid">
+<figure class="shot-card reveal"><img alt="Aperçu conceptuel Discord avec la commande /sma3 et un lecteur musical" decoding="async" loading="lazy" src="assets/shot-music.webp"/><figcaption><strong>01 / PLAY</strong><span>/sma3 — Lance ton morceau</span></figcaption></figure>
+<figure class="shot-card reveal" style="--delay:.08s"><img alt="Aperçu conceptuel Discord avec liste des morceaux en attente" decoding="async" loading="lazy" src="assets/shot-queue.webp"/><figcaption><strong>02 / QUEUE</strong><span>/list — Gère la file d'attente</span></figcaption></figure>
+<figure class="shot-card reveal" style="--delay:.16s"><img alt="Aperçu conceptuel Discord avec boutons de contrôle de la lecture" decoding="async" loading="lazy" src="assets/shot-control.webp"/><figcaption><strong>03 / DJ CONTROL</strong><span>/next — Change de son</span></figcaption></figure>
+</div><div class="shot-actions"><a class="btn btn-outline" href="#commands">Voir toutes les commandes <svg class="ico"><use href="#i-arrow"></use></svg></a><a class="btn btn-outline" href="support.html">Support &amp; FAQ <svg class="ico"><use href="#i-arrow"></use></svg></a></div></div>
+</section>
+<section class="section installation-section" id="how"><div class="container"><div class="section-header"><div><p class="section-kicker reveal"><span class="num">04</span> // GET STARTED</p><h2 class="section-title reveal">3 ÉTAPES.<br/><span class="muted">ET C'EST</span> <span class="accent">PARTI.</span></h2></div><p class="section-aside reveal">Pas de configuration compliquée pour les membres : quelques clics et ton bot apparaît dans le serveur.</p></div>
+<div class="steps"><article class="step reveal"><span class="step-num">01<span> / 03</span></span><div class="step-main"><div class="step-icon"><svg class="ico"><use href="#i-plus"></use></svg></div><h3>Invite TOV4R MUSIC</h3><p>Clique sur « Ajouter le bot » et choisis le serveur où tu as l'autorisation de gérer les applications.</p></div><svg class="ico step-arrow"><use href="#i-arrow"></use></svg></article><article class="step reveal" style="--delay:.08s"><span class="step-num">02<span> / 03</span></span><div class="step-main"><div class="step-icon"><svg class="ico"><use href="#i-headphones"></use></svg></div><h3>Rejoins un salon vocal</h3><p>Connecte-toi dans le vocal avec tes amis, puis utilise une commande slash dans un salon texte.</p></div><svg class="ico step-arrow"><use href="#i-arrow"></use></svg></article><article class="step reveal" style="--delay:.16s"><span class="step-num">03<span> / 03</span></span><div class="step-main"><div class="step-icon"><svg class="ico"><use href="#i-zap"></use></svg></div><h3>Lance /sma3</h3><p>Recherche un titre compatible et utilise les commandes de contrôle pour gérer la session.</p></div><svg class="ico step-arrow"><use href="#i-check"></use></svg></article></div>
+<div class="setup-banner reveal"><div class="setup-banner-icon"><svg class="ico"><use href="#i-discord"></use></svg></div><div><h3>TON SERVEUR. TA PLAYLIST. TON AMBIANCE.</h3><p>Prêt à donner le rythme à ta communauté ?</p></div><button class="btn btn-white" data-action="invite" type="button">Ajouter à mon serveur <svg class="ico"><use href="#i-arrow-up"></use></svg></button></div>
+</div></section>
+<section class="section faq-section" id="faq"><div class="container faq-layout"><div class="faq-heading"><p class="section-kicker reveal"><span class="num">05</span> // NEED HELP?</p><h2 class="section-title reveal">GOOD<br/><span class="accent">QUESTIONS.</span></h2><p class="reveal">Retrouve toutes les réponses et les solutions sur notre page support dédiée.</p><a class="btn btn-outline reveal" href="support.html"><svg class="ico"><use href="#i-arrow"></use></svg> Consulter Support / FAQ</a></div><div class="faq-list reveal"><details><summary>Le bot fonctionne sur plusieurs serveurs ? <svg class="ico"><use href="#i-plus"></use></svg></summary><p>Oui, TOV4R MUSIC peut être installé sur différents serveurs Discord si le bot est configuré en mode public et ses commandes sont synchronisées globalement.</p></details><details><summary>Quelles commandes puis-je utiliser ? <svg class="ico"><use href="#i-plus"></use></svg></summary><p>Les commandes prévues comprennent notamment <code>/sma3</code>, <code>/skot</code>, <code>/kml</code>, <code>/next</code>, <code>/saf</code> et <code>/volume</code>. Tu peux explorer et copier les commandes dans la section plus haut.</p></details><details><summary>Spotify et toutes les playlists sont compatibles ? <svg class="ico"><use href="#i-plus"></use></svg></summary><p>La compatibilité dépend de la version du bot. Le lecteur Apple Music sur ce site est indépendant du bot Discord : il ne lui ajoute pas de compatibilité.</p></details><details><summary>Est-ce que le site pilote vraiment la musique ? <svg class="ico"><use href="#i-plus"></use></svg></summary><p>Le lecteur TOV4R joue de vrais sons originaux directement dans la page, et le lecteur Apple Music affiche l'album DESPERADO. Aucun de ces lecteurs ne contrôle le bot Discord en direct.</p></details><details><summary>Le bot reste-t-il toujours en ligne ? <svg class="ico"><use href="#i-plus"></use></svg></summary><p>La disponibilité dépend de son hébergement et de son fonctionnement côté serveur. Ce site n'affiche pas un statut en direct, et ne garantit pas une disponibilité 24/7.</p></details></div></div></section>
+<section class="closing-section"><div class="container closing-content"><div class="closing-glow"></div><p class="closing-kicker reveal">NO SILENCE. JUST VIBES.</p><h2 class="closing-title reveal">LET'S MAKE<br/><span>NOISE<span class="closing-dot">.</span></span></h2><p class="closing-sub reveal">Invite le bot. Réunis ton équipe. Lance la musique.</p><button class="btn btn-white btn-large reveal" data-action="invite" type="button"><svg class="ico"><use href="#i-discord"></use></svg> Ajouter TOV4R MUSIC <svg class="ico"><use href="#i-arrow-up"></use></svg></button><div aria-hidden="true" class="closing-ornament">TOV4R MUSIC // TOV4R MUSIC // TOV4R MUSIC</div></div></section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-top"><a aria-label="TOV4R MUSIC — retour en haut" class="brand" href="#top"><img alt="" height="48" src="assets/logo.svg" width="48"/><span>TOV4R<span class="brand-accent">MUSIC</span><small>DISCORD MUSIC BOT</small></span></a><p>YOUR MUSIC. YOUR VIBE.<br/>YOUR SERVER.</p><div class="footer-actions"><a aria-label="Support &amp; FAQ" class="footer-help-link" href="support.html" title="Support &amp; FAQ"><svg class="ico"><use href="#i-headphones"></use></svg></a><button aria-label="Ouvrir le support" data-action="support" title="Discord / support" type="button"><svg class="ico"><use href="#i-discord"></use></svg></button><button aria-label="Ouvrir GitHub" data-action="github" title="GitHub" type="button"><svg class="ico"><use href="#i-github"></use></svg></button><button aria-label="Partager le site" data-action="share" title="Partager le site" type="button"><svg class="ico"><use href="#i-external"></use></svg></button></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> TOV4R MUSIC. ALL RIGHTS RESERVED.</span><span>MADE WITH <span class="footer-heart">♥</span> FOR DISCORD COMMUNITIES.</span><a href="#top">BACK TO TOP ↑</a></div><p class="footer-note">Projet indépendant, non affilié à Discord ni à Stormy. Audio intégré : créations originales. Album DESPERADO : lecture via Apple Music.</p></div></footer>
+<dialog aria-labelledby="dialogTitle" class="site-dialog" id="configDialog"><div class="dialog-panel"><button aria-label="Fermer" class="dialog-close" id="closeDialog" type="button"><svg class="ico"><use href="#i-close"></use></svg></button><div class="dialog-mark"><img alt="" height="70" src="assets/logo.svg" width="70"/></div><p class="section-kicker">SETUP REQUIRED</p><h2 id="dialogTitle">Lien à configurer</h2><p id="dialogMessage">Ajoute ton Client ID dans le fichier de configuration pour activer ce bouton.</p><div class="dialog-code">assets/config.js</div><p class="dialog-hint">Le site fonctionne déjà. Il ne manque que les liens de ton bot pour le publier complètement.</p><button class="btn btn-primary" id="okDialog" type="button">Compris <svg class="ico"><use href="#i-check"></use></svg></button></div></dialog>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+</body>
+</html>

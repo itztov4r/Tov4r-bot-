@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="TOV4R MUSIC logo">
+ <defs><linearGradient id="r" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF6174"/><stop offset="1" stop-color="#E81936"/></linearGradient><filter id="g" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3"/></filter></defs>
+ <rect width="160" height="160" rx="41" fill="#131017"/><rect x="4" y="4" width="152" height="152" rx="37" fill="none" stroke="#393039" stroke-width="2"/>
+ <path d="M32 99V61h17v38m11 13V48h17v64m11-26V38h17v68m11-23V62h17v37" stroke="url(#r)" stroke-width="8" stroke-linecap="round" opacity=".9"/>
+ <path d="M43 112 76 42l20 43 11-24 13 27" fill="none" stroke="#FFF9FA" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+ <circle cx="115" cy="88" r="7" fill="url(#r)"/>
+</svg>
