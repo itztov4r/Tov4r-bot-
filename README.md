@@ -1,5 +1,10 @@
 # TOV4R MUSIC — Website V5.1
 
+## Révision GitHub (5 novembre 2026)
+
+- Liste des commandes synchronisée avec les 26 commandes présentes dans `TOV4R-MUSIC/bot.py`, dont diagnostic et DJ Premium.
+- Les commandes réservées à DJ Premium ou au propriétaire sont identifiées clairement ; l’affichage sur le site ne donne aucune permission dans Discord.
+
 ## Révision GitHub (4 novembre 2026)
 
 - Correction du lien **GitHub** dans `assets/config.js` (le bouton ouvre maintenant ce dépôt).
