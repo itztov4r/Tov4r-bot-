@@ -1,0 +1,47 @@
+/* Mobile and tablet refinements for TOV4R MUSIC — 2026-11.
+   Loaded after main stylesheet, preserving the original visual identity. */
+:where(img,video,iframe,svg){max-width:100%}
+:where(.container,.hero-layout,.hero-copy,.hero-art,.player-shell,.player-main,.feature-card,.support-top-inner){min-width:0}
+@media(max-width:820px){
+ .hero-actions,.player-controls,.support-final-actions{flex-wrap:wrap;gap:12px}
+ .hero-actions .btn,.support-final-actions .btn{min-height:44px;max-width:100%}
+ .player-shell{max-width:100%}
+ .player-top-chips,.player-head{flex-wrap:wrap;gap:10px}
+ .player-body,.player-main{min-width:0}
+}
+@media(max-width:620px){
+ .container{width:calc(100% - 32px)}
+ .site-header .nav-container{gap:12px}
+ .menu-toggle{min-width:44px;min-height:44px}
+ .hero-title,.section-title,.support-hero h1{overflow-wrap:anywhere}
+ .hero-actions{display:flex;gap:10px}
+ .hero-actions .btn{width:100%;justify-content:center}
+ .hero-grid,.hero-layout,.demo-layout,.features-grid,.vibe-gallery{min-width:0}
+ .player-shell{width:100%;max-width:100%;overflow:hidden}
+ .player-head,.player-body,.player-main,.player-stats,.player-controls{max-width:100%}
+ .progress-box{width:100%;min-width:0}
+ .playlist-row{max-width:100%;min-width:0}
+ .playlist-item,.playlist-row>*{min-width:0}
+ .playlist-remove{min-width:36px;min-height:36px}
+ .stormy-tracklist{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+ .stormy-tracklist .stormy-track{grid-template-columns:26px minmax(0,1fr) auto;gap:8px}
+ .stormy-track *{min-width:0}
+ .support-top-inner{flex-wrap:wrap}
+ .support-nav{flex:1 1 100%;display:flex;flex-wrap:wrap;justify-content:flex-start;gap:6px 16px}
+ .support-nav a{min-height:42px;display:inline-flex;align-items:center}
+ .support-steps{grid-template-columns:minmax(0,1fr)}
+ .support-final-actions{display:flex;gap:12px}
+ .support-final-actions .btn{flex:1 1 100%;justify-content:center}
+ :where(input,select,textarea){max-width:100%;font-size:16px}
+ :where(dialog,.dialog-panel){max-height:calc(100dvh - 24px);max-width:calc(100vw - 24px);overflow-y:auto}
+}
+@media(max-width:375px){
+ .container{width:calc(100% - 24px)}
+ .support-hero h1{font-size:clamp(40px,12vw,60px)}
+ .support-nav a{font-size:11px}
+ .player-shell{border-radius:14px}
+ .hero-actions .btn{font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,:before,:after{scroll-behavior:auto!important;transition-duration:.01ms!important}
+}
