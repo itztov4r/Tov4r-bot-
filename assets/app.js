@@ -144,7 +144,20 @@
     { name: 'mix', description: 'Mélanger l’ordre de la file d’attente.', category: 'music' },
     { name: 'khrej', description: 'Faire quitter le salon vocal au bot.', category: 'control' },
     { name: 'jaw', description: 'Découvrir les ambiances et modes disponibles.', category: 'utility' },
-    { name: 'tov4r', description: 'Afficher les infos et l’aide de TOV4R MUSIC.', category: 'utility' }
+    { name: 'tov4r', description: 'Afficher les infos et l’aide de TOV4R MUSIC.', category: 'utility' },
+    { name: 'ping', description: 'Vérifier que le bot répond dans le serveur.', category: 'utility' },
+    { name: 'status', description: 'Consulter l’état de la connexion vocale du bot.', category: 'utility' },
+    { name: 'testaudio', description: 'Tester la sortie audio sans source externe.', category: 'utility' },
+    { name: 'testffmpeg', description: 'Tester le décodage audio avec FFmpeg.', category: 'utility' },
+    { name: 'testlink', description: 'Diagnostiquer la disponibilité d’un lien musical.', category: 'utility' },
+    { name: 'spotifyinfo', description: 'Afficher les informations d’un lien Spotify, sans lecture directe garantie.', category: 'utility' },
+    { name: 'dj', description: 'Consulter le statut et les informations DJ Premium.', category: 'utility' },
+    { name: 'djplay', description: 'DJ Premium : placer une musique en tête de file.', category: 'music' },
+    { name: 'djremove', description: 'DJ Premium : retirer une musique de la file.', category: 'music' },
+    { name: 'djmove', description: 'DJ Premium : réorganiser la file.', category: 'music' },
+    { name: 'djclear', description: 'DJ Premium : vider les titres en attente.', category: 'music' },
+    { name: 'djgrant', description: 'Propriétaire uniquement : accorder DJ Premium.', category: 'utility' },
+    { name: 'djrevoke', description: 'Propriétaire uniquement : retirer DJ Premium.', category: 'utility' }
   ];
   const labels = { music: 'MUSIQUE', control: 'CONTRÔLE', utility: 'UTILITAIRE' };
   const grid = $('#commandsGrid');
